@@ -145,6 +145,7 @@ LOGGING = {
         },
         'error': {
             'format': '%(asctime)s %(levelname)s %(pathname)s %(message)s',
+            'exc_info': 'True',
         },
         'info': {
             'format': '%(asctime)s %(levelname)s %(module)s %(message)s',
@@ -188,7 +189,7 @@ LOGGING = {
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'general_file'],
+            'handlers': ['console', 'general_file',  'error_file'],
             'level': 'DEBUG',
             'propagate': True,
         },
