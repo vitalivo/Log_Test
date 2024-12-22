@@ -186,10 +186,16 @@ LOGGING = {
             'filters': ['require_debug_false'],
             'formatter': 'error',
         },
+        'debug_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+            'formatter': 'debug',
+        },
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'general_file',  'error_file'],
+            'handlers': ['console', 'general_file',  'error_file', 'debug_file'],
             'level': 'DEBUG',
             'propagate': True,
         },

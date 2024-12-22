@@ -1,0 +1,10 @@
+2024-12-22 16:50:51,828 ERROR C:\Users\vital\PycharmProjects\Django_Log_Test\Log_Test1\testlog\tests.py Error occurred
+Traceback (most recent call last):
+  File "C:\Users\vital\PycharmProjects\Django_Log_Test\Log_Test1\testlog\tests.py", line 19, in test_error_logging
+    raise Exception('Test error')
+Exception: Test error
+2024-12-22 16:56:45,884 ERROR C:\Users\vital\PycharmProjects\Django_Log_Test\Log_Test1\testlog\tests.py Error occurred
+Traceback (most recent call last):
+  File "C:\Users\vital\PycharmProjects\Django_Log_Test\Log_Test1\testlog\tests.py", line 19, in test_error_logging
+    raise Exception('Test error')
+Exception: Test error
