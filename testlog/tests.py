@@ -1,8 +1,7 @@
 import django
-django.setup()
 import logging
-
 from django.test import TestCase
+django.setup()
 
 
 class LoggingTestCase(TestCase):
@@ -19,6 +18,6 @@ class LoggingTestCase(TestCase):
             raise Exception('Test error')
         except Exception as e:
             logger.error('Error occurred', exc_info=True)
-        # Check if the message was written to the log file
+
         with open('errors.log', 'r') as f:
             self.assertIn('Error occurred', f.read())
