@@ -21,3 +21,5 @@ class LoggingTestCase(TestCase):
 
         with open('errors.log', 'r') as f:
             self.assertIn('Error occurred', f.read())
+
+
